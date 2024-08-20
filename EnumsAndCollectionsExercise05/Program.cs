@@ -18,7 +18,8 @@ namespace EnumsAndCollectionsExercise05
                 new Duck() { Kind = KindOfDuck.Mallard, Size = 14 },
                 new Duck() { Kind = KindOfDuck.Loon, Size = 13 },
             };
-
+            IEnumerable<Bird> upcastDucks = ducks;
+            Bird.FlyAway(upcastDucks.ToList(), "Minnesota");
         }
     }
 }
